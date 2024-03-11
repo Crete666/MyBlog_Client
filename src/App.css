@@ -9,6 +9,7 @@ body,
 #root,
 #root > div {
   height: 100%;
+  background-color: black;
 }
 
 #header {
@@ -36,6 +37,7 @@ body,
   width: 1024px;
   display: flex;
   justify-content: space-between;
+  background-color: #ffffa0;
 }
 
 #side-left {
@@ -48,4 +50,5 @@ body,
   width: 200px;
   display: flex;
   background-color: aqua;
+  justify-content: center;
 }
