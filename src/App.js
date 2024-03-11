@@ -1,24 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Fragment } from "react";
+import "./App.css";
+import CenterBoardComponent from "./centerBoard";
+import SideLeftComponent from "./sideLeft";
+import SideRightComponent from "./sideRight";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Fragment>
+      <div>
+        <div id="header">
+          <div id="header-area"></div>
+        </div>
+        <div id="body">
+          <div id="body-area">
+            <div id="side-left">
+              <SideLeftComponent />
+            </div>
+            <div id="center">
+              <CenterBoardComponent />
+              <h1>상세 내용ㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇ</h1>
+            </div>
+            <div id="side-right">
+              <SideRightComponent />
+            </div>
+          </div>
+        </div>
+      </div>
+    </Fragment>
   );
 }
 
