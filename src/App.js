@@ -3,13 +3,15 @@ import "./App.css";
 import CenterBoardComponent from "./centerBoard";
 import SideLeftComponent from "./sideLeft";
 import SideRightComponent from "./sideRight";
-
+import HeaderComponent from "./header";
 function App() {
   return (
     <Fragment>
       <div>
         <div id="header">
-          <div id="header-area"></div>
+          <div id="header-area">
+            <HeaderComponent />
+          </div>
         </div>
         <div id="body">
           <div id="body-area">
