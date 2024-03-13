@@ -42,6 +42,7 @@ body,
   width: 200px;
   display: flex;
   background-color: aqua;
+  justify-content: center;
 }
 
 #side-right {
