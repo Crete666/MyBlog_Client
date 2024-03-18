@@ -10,7 +10,9 @@ function header() {
       </div>
       <div id="information">
         <b> Made by 최지혁</b>
-        <a href="https://github.com/Crete666?tab=repositories">Github</a>
+        <a href="https://github.com/Crete666?tab=repositories" target="_blank">
+          Github
+        </a>
       </div>
     </div>
   );

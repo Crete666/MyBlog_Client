@@ -2,24 +2,21 @@ import "./index.css";
 function centerBoard() {
   return (
     <div id="blog-board">
-      <table border={1}>
-        <tbody>
+      <table>
+        <thead>
           <tr>
-            <td>첫번째 게시글</td>
+            <th>
+              <div className="board-title">
+                <span className="head-text">글제목</span>
+              </div>
+            </th>
+            <th>
+              <div className="board-createAt">
+                <span className="head-text">작성일</span>
+              </div>
+            </th>
           </tr>
-          <tr>
-            <td>두번째 게시글</td>
-          </tr>
-          <tr>
-            <td>세번째 게시글</td>
-          </tr>
-          <tr>
-            <td>네번째 게시글</td>
-          </tr>
-          <tr>
-            <td>다섯번째 게시글</td>
-          </tr>
-        </tbody>
+        </thead>
       </table>
     </div>
   );

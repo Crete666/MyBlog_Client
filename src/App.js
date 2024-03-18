@@ -1,9 +1,11 @@
 import React, { Fragment } from "react";
 import "./App.css";
 import CenterBoardComponent from "./centerBoard";
+import DetailBoardComponent from "./detailBoard";
 import SideLeftComponent from "./sideLeft";
 import SideRightComponent from "./sideRight";
 import HeaderComponent from "./header";
+
 function App() {
   return (
     <Fragment>
@@ -20,7 +22,9 @@ function App() {
             </div>
             <div id="center">
               <CenterBoardComponent />
-              <h1>상세 내용ㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇ</h1>
+              <div id="last-content">
+                <DetailBoardComponent />
+              </div>
             </div>
             <div id="side-right">
               <SideRightComponent />

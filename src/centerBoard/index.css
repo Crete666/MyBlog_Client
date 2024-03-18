@@ -1,4 +1,27 @@
+table {
+  border-spacing: 0px;
+}
+
 #blog-board {
-  width: 624px;
-  border: 1px solid black;
+  width: 600px;
+  border-bottom: 1px solid gray;
+}
+
+.board-title {
+  width: 500px;
+  display: flex;
+  justify-content: left;
+  padding: 1px;
+}
+
+.board-createAt {
+  width: 100px;
+  display: flex;
+  justify-content: right;
+  padding: 1px;
+}
+
+.head-text {
+  font-size: 15px;
+  color: gray;
 }
