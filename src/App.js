@@ -1,10 +1,13 @@
-import React, { Fragment } from "react";
 import "./App.css";
+import React, { Fragment } from "react";
+import { Switch, Route } from "react-router-dom";
+
 import CenterBoardComponent from "./centerBoard";
 import DetailBoardComponent from "./detailBoard";
 import SideLeftComponent from "./sideLeft";
 import SideRightComponent from "./sideRight";
 import HeaderComponent from "./header";
+import InsertDataComponent from "./insertData";
 
 function App() {
   return (
@@ -23,7 +26,14 @@ function App() {
             <div id="center">
               <CenterBoardComponent />
               <div id="last-content">
-                <DetailBoardComponent />
+                <Switch>
+                  <Route exact={true} path="/">
+                    <DetailBoardComponent />
+                  </Route>
+                  <Route exact={true} path="/myblogadmin">
+                    <InsertDataComponent />
+                  </Route>
+                </Switch>
               </div>
             </div>
             <div id="side-right">

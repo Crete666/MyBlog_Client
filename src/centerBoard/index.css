@@ -3,25 +3,39 @@ table {
 }
 
 #blog-board {
-  width: 600px;
+  max-width: 600px;
   border-bottom: 1px solid gray;
+  padding-bottom: 10px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .board-title {
-  width: 500px;
+  min-width: 498px;
   display: flex;
   justify-content: left;
   padding: 1px;
+  color: black;
 }
 
 .board-createAt {
-  width: 100px;
+  min-width: 98px;
   display: flex;
   justify-content: right;
   padding: 1px;
+  color: black;
 }
 
 .head-text {
   font-size: 15px;
   color: gray;
+}
+
+.detail-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.center-board-row {
+  display: flex;
 }
