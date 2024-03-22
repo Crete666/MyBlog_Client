@@ -27,11 +27,14 @@ function App() {
               <CenterBoardComponent />
               <div id="last-content">
                 <Switch>
-                  <Route exact={true} path="/">
+                  <Route exact={true} path="/myblog">
                     <DetailBoardComponent />
                   </Route>
                   <Route exact={true} path="/myblogadmin">
                     <InsertDataComponent />
+                  </Route>
+                  <Route exact={true} path="/myblog/:id">
+                    <DetailBoardComponent />
                   </Route>
                 </Switch>
               </div>

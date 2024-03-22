@@ -21,7 +21,7 @@ function SideLeft() {
       <h2>Project</h2>
       {projects.map(function (project, index) {
         return (
-          <div className="project">
+          <div className="project" key={index}>
             <b>{project.name}</b>
             <div className="project-box">
               <a href={`${project.hubUrl}`} target="_blank">

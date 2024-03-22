@@ -4,9 +4,9 @@ function header() {
   return (
     <div id="home">
       <div id="Logo">
-        <Link to="/">
-          <img src="./images/Logo.png" alt="로고" />
-        </Link>
+        <a href="/myblog">
+          <img src="../images/Logo.png" alt="로고" />
+        </a>
       </div>
       <div id="information">
         <b> Made by 최지혁</b>

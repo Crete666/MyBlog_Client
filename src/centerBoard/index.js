@@ -3,8 +3,6 @@ import "./index.css";
 import axios from "axios";
 import dayjs from "dayjs";
 import { API_URL } from "../config/constants.js";
-import { Link } from "react-router-dom";
-import { Divider } from "antd";
 
 function CenterBoard() {
   const [boards, setBoards] = React.useState([]);
@@ -29,14 +27,14 @@ function CenterBoard() {
       </div>
       {boards.map(function (board, index) {
         return (
-          <Link className="detail-link" to={`/${board.id}`}>
+          <a href={`/myblog/${board.id}`}>
             <div className="center-board-row">
               <div className="board-title">{board.title}</div>
               <div className="board-createAt">
                 {dayjs(board.createdAt).format("YYYY-MM-DD")}
               </div>
             </div>
-          </Link>
+          </a>
         );
       })}
     </div>
