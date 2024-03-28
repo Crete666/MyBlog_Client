@@ -1,6 +1,6 @@
 import "./App.css";
 import React, { Fragment } from "react";
-import { Switch, Route } from "react-router-dom";
+import { Switch, Route, Redirect } from "react-router-dom";
 
 import CenterBoardComponent from "./centerBoard";
 import DetailBoardComponent from "./detailBoard";
@@ -27,6 +27,11 @@ function App() {
               <CenterBoardComponent />
               <div id="last-content">
                 <Switch>
+                  <Route
+                    exact={true}
+                    path="/"
+                    render={() => <Redirect to="/myblog" />}
+                  />
                   <Route exact={true} path="/myblog">
                     <DetailBoardComponent />
                   </Route>

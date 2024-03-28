@@ -16,7 +16,7 @@ function InsertData() {
       })
       .then((result) => {
         console.log(result);
-        history.replace("/");
+        history.replace("/myblog");
       })
       .catch((error) => {
         console.error(error);
